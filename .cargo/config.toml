@@ -1,0 +1,6 @@
+# .cargo/config.toml
+[build]
+rustflags = ["-C", "target-cpu=native", "-C", "target-feature=+avx2"]
+
+[target.x86_64-unknown-linux-gnu]
+rustflags = ["-C", "target-cpu=native", "-C", "target-feature=+avx2"]
